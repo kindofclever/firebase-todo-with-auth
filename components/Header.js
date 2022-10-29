@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillFilePersonFill } from "react-icons/bs";
+import Modal from "./Modal";
 
 const Header = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
-    <div className="sticky top-0 left-0 flex justify-between items-center p-4 md:p-5 bg-inherit border-b-2 md:border-b-4 border-solid border-[#ffe9ce]">
-      <h1 className="select-none uppercase">Todos</h1>
-      <BsFillFilePersonFill className=" duration-300 hover:text-[#8d339f] text-4xl md:text-5xl xl:text-6xl cursor-pointer" />
-    </div>
+    <>
+      {openModal ? <Modal setOpenModal={setOpenModal} /> : <></>}
+      <div className="sticky top-0 left-0 flex justify-between items-center p-4 md:p-5 bg-[#0d294b] border-b-2 md:border-b-4 border-solid border-[#fcffff]">
+        <h1 className="select-none uppercase">Todos</h1>
+        <BsFillFilePersonFill
+          onClick={() => setOpenModal(true)}
+          className=" duration-300 hover:text-[#fcffff] text-[#ca1503] text-4xl md:text-5xl xl:text-6xl cursor-pointer"
+        />
+      </div>
+    </>
   );
 };
 

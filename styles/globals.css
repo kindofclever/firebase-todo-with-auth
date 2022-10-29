@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-      @apply bg-[#f98c18] text-[#260446] tracking-wide;
+      @apply bg-[#2a3692] text-[#ca1503] tracking-wide;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -16,11 +16,11 @@
   }
 
   h1 {
-      @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl ; 
+      @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#ca1503] ; 
   }
 
   h2 {
-      @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#8d339f]; 
+      @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#0d294b]; 
   }
 
   li {
