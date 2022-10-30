@@ -15,6 +15,7 @@ const TodoCard = ({
       <div className="flex-1 flex">
         {edit === todoKey ? (
           <input
+            autofocus
             className="bg-inherit flex-1 text-white outline-none"
             value={edittedValue}
             onChange={(e) => setEdittedValue(e.target.value)}
