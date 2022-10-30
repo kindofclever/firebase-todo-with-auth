@@ -29,9 +29,9 @@ const Modal = ({ setOpenModal }) => {
             logOut();
             setOpenModal(false);
           }}
-          className="w-full max-w-[20ch] p-2 bg-[#fcffff] text-[#ca1503] duration-300 relative
+          className="w-full max-w-[20ch] p-2 bg-[#2a3692] text-[#fcffff] duration-300 relative
         after:absolute after:top-0 after:right-full after:bg-[#ca1503] after:z-10 after:w-full after:h-full overflow-hidden 
-        hover:after:translate-x-full after:duration-300 hover:text-[#fcffff]">
+        hover:after:translate-x-full after:duration-300">
           <p className="relative z-20 font-bold">Logout</p>
         </button>
       </div>
