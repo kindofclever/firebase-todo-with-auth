@@ -21,7 +21,7 @@ const Modal = ({ setOpenModal }) => {
         <h2 className="select-none">Menu</h2>
         <i
           onClick={() => setOpenModal(false)}
-          className="fa-solid fa-circle-xmark text-3xl md:text-4xl duration-300 hover:rotate-90 curtsor-pointer"></i>
+          className="fa-solid fa-circle-xmark text-3xl md:text-4xl duration-300 hover:rotate-45 curtsor-pointer"></i>
       </div>
       <div className="p-4 flex flex-col gap-4 text-[#2a3692] items-center justify-center h-full">
         <button
