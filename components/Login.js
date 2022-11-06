@@ -20,6 +20,7 @@ const Login = () => {
         await login(email, password);
       } catch (error) {
         setError("Email adress or password are incorrect...");
+        console.log(error);
       }
       return;
     }
